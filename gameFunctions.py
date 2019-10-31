@@ -55,7 +55,8 @@ def guess(movies, randMovie, scores):
         print("It's a draw. Y'all are equally bad.")
 
 def playAgain():
-    userInput = input("Do you want to play again? Type 'no' if not. If you don't type 'no', you gotta play again anyways u scrub")
+    "Check to see if the user wants to play again"
+    userInput = input("Do you want to play again? Type 'no' if not. If you don't type 'no', you gotta play again anyways u scrub: ")
     if userInput == "no":
         return False
     else:
