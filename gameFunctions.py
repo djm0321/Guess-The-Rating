@@ -3,7 +3,7 @@ import random
 def openFile():
     "Opens file. Duh."
     file = "movie_metadata.csv"
-    movies = pd.read_csv(file, index_col = 'id')
+    movies = pd.read_csv(file)
     return movies
 
 def randomMovie(movies):
