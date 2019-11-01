@@ -8,9 +8,11 @@ def main():
     scores = [0, 0]
     keepPlaying = True
     movies = gameFunctions.openFile()
+    print(movies.columns.values)
     while keepPlaying:
         randMovie = gameFunctions.randomMovie(movies)
         print(str(movies.values[randMovie][11]) + ", " + str(movies.values[randMovie][25]))
+        print(movies.values[randMovie][17])
         gameFunctions.guess(movies, randMovie, scores)
         print(scores)
         keepPlaying = gameFunctions.playAgain()
